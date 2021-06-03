@@ -2,11 +2,11 @@
     margin:0;
     padding:0;
     text-decoration: none;
-    font-family: "google sans";
+    font-family: "Roboto";
 }
 
 body {
-    background: #333;
+    background: #9A988F;
 }
 
 .img-fluid {
@@ -33,12 +33,15 @@ body {
     overflow: hidden;
     backface-visibility: hidden;
     position: absolute;
-    transition: transform linear 1s;
+    transition: transform linear .6s;
 }
 
 .front {
     background-color: #fff;
     transform: perspective(600px) rotateY(0deg);
+    background-size: cover;
+    background-position: center;
+    background-image: url(./photo_2021-06-03_13-57-36.jpg);
 }
 
 .back{
@@ -64,7 +67,7 @@ body {
     align-items: center;
     font-size: 1.5em;
     color: #131435;
-    transition: 0.4s;
+    transition: .4s;
     border-radius: 50%;
 }
 
